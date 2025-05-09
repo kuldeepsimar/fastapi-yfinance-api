@@ -14,19 +14,20 @@ uvicorn main:app --reload
 
 ##🔗 API Endpoints
 Endpoint	Description
-/	Health check: returns API status.
-/stock/{ticker}/info	Returns stock info (company name, market cap, etc.).
-/stock/{ticker}/history	Returns historical price data (customizable via period & interval).
-/stock/{ticker}/balance-sheet	Returns balance sheet.
-/stock/{ticker}/cashflow	Returns cash flow data.
-/stock/{ticker}/financials	Returns income statement.
-/stock/{ticker}/holders	Returns major and institutional holders.
-/stock/{ticker}/recommendations	Returns analyst recommendations.
-/stock/{ticker}/dividends	Returns dividend history.
-/stock/{ticker}/splits	Returns stock splits history.
-/stock/{ticker}/sustainability	Returns ESG/sustainability data.
-/stock/{ticker}/actions	Returns corporate actions like buybacks and dividends.
-/stock/{ticker}/earnings	Returns earnings reports.
+
+/	Health check: returns API status./n
+/stock/{ticker}/info	Returns stock info (company name, market cap, etc.)./n
+/stock/{ticker}/history	Returns historical price data (customizable via period & interval)./n
+/stock/{ticker}/balance-sheet	Returns balance sheet./n
+/stock/{ticker}/cashflow	Returns cash flow data./n
+/stock/{ticker}/financials	Returns income statement./n
+/stock/{ticker}/holders	Returns major and institutional holders./n
+/stock/{ticker}/recommendations	Returns analyst recommendations. /n
+/stock/{ticker}/dividends	Returns dividend history./n
+/stock/{ticker}/splits	Returns stock splits history./n
+/stock/{ticker}/sustainability	Returns ESG/sustainability data./n
+/stock/{ticker}/actions	Returns corporate actions like buybacks and dividends./n
+/stock/{ticker}/earnings	Returns earnings reports./n
 
 ##📅 period and interval Guide
 period – Time Span
