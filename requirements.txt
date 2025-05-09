@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 fastapi
 uvicorn[standard]
 yfinance
 pandas
+=======
+fastapi==0.98.0
+uvicorn==0.22.0
+yfinance==0.2.59
+pandas==2.0.3
+>>>>>>> e63f128647a440d01874562b05adfeac32ed3293
