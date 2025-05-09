@@ -12,7 +12,7 @@ pip install fastapi uvicorn yfinance
 ## Run the API
 uvicorn main:app --reload
 
-###🔗 API Endpoints
+##🔗 API Endpoints
 Endpoint	Description
 /	Health check: returns API status.
 /stock/{ticker}/info	Returns stock info (company name, market cap, etc.).
@@ -28,7 +28,7 @@ Endpoint	Description
 /stock/{ticker}/actions	Returns corporate actions like buybacks and dividends.
 /stock/{ticker}/earnings	Returns earnings reports.
 
-###📅 period and interval Guide
+##📅 period and interval Guide
 period – Time Span
 Value	Meaning
 1d	1 day
@@ -43,7 +43,7 @@ Value	Meaning
 ytd	Year to date
 max	Maximum available
 
-###interval – Data Frequency
+##interval – Data Frequency
 Value	Meaning
 1m	1 minute (7 days max)
 2m	2 minutes
@@ -66,7 +66,7 @@ Value	Meaning
 GET /stock/TCS.NS/history?period=1mo&interval=1d
 
 
-###Get stock info for Reliance:
+##Get stock info for Reliance:
 GET /stock/RELIANCE.NS/info
 
 
