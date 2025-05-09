@@ -21,9 +21,13 @@ Endpoint	Description
 
 /	Health check: returns API status.
 
-/stock/{ticker}/info	Returns stock info (company name, market cap, etc.).
+/stock/{ticker}/info	
 
-/stock/{ticker}/history	Returns historical price data (customizable via period & interval).
+Returns stock info (company name, market cap, etc.).
+
+/stock/{ticker}/history	
+
+Returns historical price data (customizable via period & interval).
 
 /stock/{ticker}/balance-sheet	Returns balance sheet.
 
