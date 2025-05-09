@@ -15,39 +15,61 @@ pip install fastapi uvicorn yfinance
 uvicorn main:app --reload
 
 
-##🔗 API Endpoints
+#🔗 API Endpoints
 
-Endpoint	Description
+#Endpoint	Description
 
-/	Health check: returns API status.
+## /Health check: 
 
-/stock/{ticker}/info	
+returns API status.
+
+## /stock/{ticker}/info	
 
 Returns stock info (company name, market cap, etc.).
 
-/stock/{ticker}/history	
+## /stock/{ticker}/history	
 
 Returns historical price data (customizable via period & interval).
 
-/stock/{ticker}/balance-sheet	Returns balance sheet.
+## /stock/{ticker}/balance-sheet	
 
-/stock/{ticker}/cashflow	Returns cash flow data.
+Returns balance sheet.
 
-/stock/{ticker}/financials	Returns income statement.
+## /stock/{ticker}/cashflow	
 
-/stock/{ticker}/holders	Returns major and institutional holders.
+Returns cash flow data.
 
-/stock/{ticker}/recommendations	Returns analyst recommendations. 
+## /stock/{ticker}/financials	
 
-/stock/{ticker}/dividends	Returns dividend history.
+Returns income statement.
 
-/stock/{ticker}/splits	Returns stock splits history.
+## /stock/{ticker}/holders	
 
-/stock/{ticker}/sustainability	Returns ESG/sustainability data.
+Returns major and institutional holders.
 
-/stock/{ticker}/actions	Returns corporate actions like buybacks and dividends.
+## /stock/{ticker}/recommendations	
 
-/stock/{ticker}/earnings	Returns earnings reports.
+Returns analyst recommendations. 
+
+## /stock/{ticker}/dividends	
+
+Returns dividend history.
+
+## /stock/{ticker}/splits	
+
+Returns stock splits history.
+
+## /stock/{ticker}/sustainability	
+
+Returns ESG/sustainability data.
+
+## /stock/{ticker}/actions	
+
+Returns corporate actions like buybacks and dividends.
+
+## /stock/{ticker}/earnings	
+
+Returns earnings reports.
 
 
 ##📅 period and interval Guide
@@ -122,9 +144,9 @@ GET /stock/TCS.NS/history?period=1mo&interval=1d
 GET /stock/RELIANCE.NS/info
 
 
-##🇮🇳 Indian Stock Support
+#🇮🇳 Indian Stock Support
 
-###For Indian stocks:
+## For Indian stocks:
 
 Append .NS for NSE (e.g., TCS.NS, RELIANCE.NS)
 
